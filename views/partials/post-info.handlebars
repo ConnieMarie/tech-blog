@@ -1,0 +1,17 @@
+<article class="post card">
+        <div class="title card-header">
+          <h2>
+            <a class="card-header" href="/post/{{id}}">{{title}}</a>
+          </h2>
+        </div>
+        <div class="card-body">
+          <p>
+            {{contents}}
+          </p>
+          by
+          {{user.username}}
+          on
+          {{created_at}}
+          <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+        </div>
+      </article>
