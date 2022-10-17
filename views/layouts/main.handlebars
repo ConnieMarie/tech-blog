@@ -1,35 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
 
-<body>
-  <div class="wrapper">
-     <header>
-    
+  <body class="flex-column">
     <nav>
-        <a href="/">Home</a>
-        <a href="/dashboard">Dashboard</a>
-      <button id="logout" class="btn-no-style">logout</button>
-      <a href="/login">login</a>
+      <a class="nav-item" href="/">Home</a>
+      {{!-- {{#if loggedIn}} --}}
+        <a class="nav-item" href="/dashboard">Dashboard</a>
+        <button class="nav-item btn-no-style" id="logout">Logout</button>
+      {{!-- {{else}} --}}
+        <a class="nav-item" href="/login">Login</a>
+      {{!-- {{/if}} --}}
     </nav>
-    <h1>
-      <a href="/">My Tech Blog</a>
-    </h1>
-  </header>
-    <main>
-      {{{ body }}}
+    <header class="hero">
+      <h1>
+        <a class="app-title" href="/">My Tech Blog</a>
+      </h1>
+    </header>
+    <main class="flex-row justify-space-between">
+      {{{body}}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
-    <script src="/javascript/logout.js"></script>
-</body>
+    {{!-- {{#if loggedIn}} --}}
+      <script src="/javascript/logout.js"></script>
+    {{!-- {{/if}} --}}
+  </body>
 
 </html>
