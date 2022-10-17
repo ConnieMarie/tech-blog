@@ -138,11 +138,22 @@
   .nav-item a {
     color: var(--primary);
   }
+
+  .app-link {
+    margin: 0 40px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
   
   .app-title {
     font-size: 3rem;
     background-color: var(--primary);
     color: var(--dark);
+    text-decoration: none;
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
@@ -191,6 +202,7 @@
   
   .card-header {
     color: var(--primary);
+    text-decoration: none;
     background-color: var(--dark);
     padding: 2.5%;
     border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
