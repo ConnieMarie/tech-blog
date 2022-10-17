@@ -1,0 +1,45 @@
+<article class="post card">
+  <div class="title card-header">
+    <h2>
+      <a class="card-header">{{post.title}}</a>
+    </h2>
+  </div>
+  <div class="card-body">
+    <p>
+      {{post.contents}}
+    </p>
+    by
+    {{post.user.username}}
+    on
+    {{post.created_at}}
+    <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+  </div>
+</article>
+
+<div >
+  <form class="comment-form user-form">
+    <div>
+      <textarea name="comment-body" class="form-input"></textarea>
+    </div>
+
+    <div>
+      <button type="submit" class="btn">add comment</button>
+    </div>
+  </form>
+</div>
+
+<div class="comments">
+  {{#each post.comments}}
+    <section class="comment card">
+      <div class="card-header">
+        {{user.username}}
+        on
+        {{created_at}}
+      </div>
+      <div class="text card-body">
+        {{comment_text}}
+      </div>
+    </section>
+  {{/each}}
+</div>
+
