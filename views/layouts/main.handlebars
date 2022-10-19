@@ -10,8 +10,8 @@
   <body class="flex-column">
     <nav>
       <a href="/" class="nav-item">Home</a>
+      <a href="/dashboard" class="nav-item">Dashboard</a>
       {{#if loggedIn}}
-        <a href="/dashboard" class="nav-item">Dashboard</a>
         <button class="nav-item btn-no-style" id="logout">Logout</button>
       {{else}}
         <a href="/login" class="nav-item">Login</a>
