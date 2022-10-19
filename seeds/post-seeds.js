@@ -12,7 +12,7 @@ const postdata = [
     user_id: 8
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
+    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel.',
     contents: 'Officia sint commodo dolore nulla laborum ipsum ea dolor aliquip.',
     user_id: 1
   },
@@ -72,7 +72,7 @@ const postdata = [
     user_id: 3
   },
   {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
+    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate.',
     contents: 'Adipisicing nostrud consequat veniam occaecat ut.',
     user_id: 3
   },
