@@ -6,8 +6,12 @@
   </h2>
   <form class="edit-post-form user-form card-body">
     <div>
-      <input name="post-title" type="text" class="form-input" value="{{post.title}}" />
-      
+      <label for="post-title" class="form-label">Title</label>
+      <input name="post-title" type="text" class="form-input" value="{{post.title}}"/> 
+    </div>
+    <div>
+      <label for="post-contents">Blog</label>
+      <textarea name="post-contents" type="text" class="form-input" value="{{post.contents}}"></textarea>
     </div>
     <div>
        by you on {{format_date post.created_at}}
